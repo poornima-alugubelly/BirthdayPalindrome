@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Orbitron&display=swap");
+:root {
+	--primary-color: rgb(94, 216, 238);
+	--secondary-color: rgb(248, 193, 203);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 110vh;
+	background-image: linear-gradient(
+		to bottom right,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	font-family: "Architects Daughter", cursive;
+}
+.container {
+	width: 100%;
+	max-width: 50%;
+	padding: 2rem;
+	margin: auto;
+	text-align: center;
+	border: double thick white;
+	margin-bottom: 0;
+	margin-top: 1%;
+}
+
+#heading {
+	font-size: 3.3rem;
+	padding-bottom: 1rem;
+	text-shadow: 0.05rem 0.1rem white;
+}
+
+#sub-heading {
+	font-size: 1.8rem;
+	padding-bottom: 1rem;
+}
+
+#info {
+	padding-bottom: 2rem;
+}
+label,
+input {
+	display: block;
+}
+
+label {
+	font-size: 2rem;
+}
+
+input {
+	width: 27%;
+	padding: 1rem;
+	height: 0.25rem;
+	display: block;
+	margin: 0.5rem 0rem 0.5rem 16.3rem;
+	font-weight: bold;
+}
+
+#submit-btn {
+	font-weight: bold;
+	padding: 0.3rem;
+	width: 20%;
+	margin-top: 1rem;
+	border: 0.1rem solid black;
+	border-radius: 0.5rem;
+	font-family: inherit;
+}
+
+#output {
+	/* margin-top: 1.5rem; */
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border: 0.1rem solid black;
+}
+
+#image {
+	width: 20%;
+	height: 20%;
+	margin: auto;
+	display: block;
+}
