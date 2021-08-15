@@ -10,7 +10,7 @@ body {
 	padding: 0;
 }
 body {
-	height: 110vh;
+	height: 100vh;
 	background-image: linear-gradient(
 		to bottom right,
 		var(--primary-color),
@@ -53,11 +53,11 @@ label {
 }
 
 input {
-	width: 27%;
+	width: 30%;
 	padding: 1rem;
 	height: 0.25rem;
 	display: block;
-	margin: 0.5rem 0rem 0.5rem 16.3rem;
+	margin: auto;
 	font-weight: bold;
 }
 
