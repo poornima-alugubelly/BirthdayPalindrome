@@ -194,11 +194,8 @@ function printDate(index, nextDate) {
 var dateInput = document.querySelector("#date-input");
 var submitBtn = document.querySelector("#submit-btn");
 var output = document.querySelector("#output");
-var image = document.querySelector("#image");
 
 function checkBirthday() {
-	image.style.opacity = "0";
-	output.style.display = "block";
 	var bdayStr = dateInput.value;
 
 	if (bdayStr !== "") {
@@ -216,20 +213,16 @@ function checkBirthday() {
 		} else {
 			[ctr, nextDate, index] = getNearestPalindromeDate(date);
 			[result1, result2] = printDate(index, nextDate);
-			console.log(nextDate);
 			output.innerText = `The next palindrome date is ${result2} (${result1}). You missed it by ${ctr} days! 😔`;
 		}
 	}
 }
 function clickHandler() {
 	if (dateInput.value == "") {
-		output.style.display = "block";
 		output.innerText = "Please choose a date";
 	} else {
-		image.src = "./img/loading.gif";
-		image.style.opacity = "1.0";
-		output.style.display = "none";
-		setTimeout(checkBirthday, 2000);
+		output.innerHTML = `<img id="image" src="/img/loading.gif">`;
+		setTimeout(checkBirthday, 1500);
 	}
 }
 
